@@ -29,7 +29,7 @@ class ApplicationController < Sinatra::Base
       erb :account
     else
       erb :error
-      redirect to ('/')
+      #redirect to ('/')
     end
   end
 
