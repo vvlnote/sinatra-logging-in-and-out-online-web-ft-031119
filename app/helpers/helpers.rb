@@ -5,6 +5,11 @@ class Helpers
   end
   
   def self.is_logged_in?(session)
-    session.has_key?('user_id')? ture : false
+    #session.has_key?('user_id')? ture : false
+    if session.has_key?('user_id')
+      true
+    else
+      false
+    end
   end
 end
