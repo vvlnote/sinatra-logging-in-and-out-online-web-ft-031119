@@ -28,6 +28,7 @@ class ApplicationController < Sinatra::Base
       erb :account
     else
       redirect to ('/')
+    end
   end
 
   get '/logout' do
